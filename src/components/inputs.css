@@ -1,0 +1,51 @@
+:where(input) {
+  background-color: var(--surface-3);
+  padding-inline: var(--size-3);
+  padding-block: var(--size-2);
+  border-radius: var(--default-radius);
+  transition: outline-width 150ms;
+  outline: 0px solid var(--brand-color);
+  outline-offset: 0;
+
+  &:focus-visible {
+    outline-width: var(--border-size-2);
+    outline-color: var(--brand-color);
+  }
+
+  &::placeholder {
+    font-weight: var(--font-weight-5);
+    color: var(--text-3);
+    opacity: 1;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: var(--surface-1);
+    border: var(--border-size-1) solid var(--surface-4);
+  }
+
+  &.invalid {
+    outline: var(--border-size-2) solid var(--red-8);
+  }
+}
+
+:where(.input-wrapper) {
+  position: relative;
+  background-color: var(--surface-3);
+  width: min-content;
+  border-radius: var(--default-radius);
+  height: auto;
+
+  & .material-icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-3);
+    left: var(--size-2);
+  }
+
+  & input {
+    /* 24px is the size of the icon */
+    padding-left: calc(2 * var(--size-2) + 24px);
+  }
+}

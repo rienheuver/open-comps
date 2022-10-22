@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Components</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <h1>Open Components</h1>
+    <section>
+      <h2>Pick your brand color</h2>
+      <span data-color-picker="true" class="gray"></span>
+      <span data-color-picker="true" class="red"></span>
+      <span data-color-picker="true" class="pink"></span>
+      <span data-color-picker="true" class="grape"></span>
+      <span data-color-picker="true" class="violet"></span>
+      <span data-color-picker="true" class="indigo"></span>
+      <span data-color-picker="true" class="blue"></span>
+      <span data-color-picker="true" class="cyan"></span>
+      <span data-color-picker="true" class="teal"></span>
+      <span data-color-picker="true" class="green"></span>
+      <span data-color-picker="true" class="lime"></span>
+      <span data-color-picker="true" class="yellow"></span>
+      <span data-color-picker="true" class="orange"></span>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <div class="three-columns">
+        <div class="header">Type</div>
+        <div class="header">Example</div>
+        <div class="header">Source code</div>
+
+        Regular / primary
+        <button>Button</button>
+        <pre>&lt;button&gt;Button&lt;/button&gt;</pre>
+
+        Outline / secondary
+        <button class="outline">Button</button>
+        <pre>&lt;button class="outline"&gt;Button&lt;/button&gt;</pre>
+
+        Disabled
+        <button disabled>Button</button>
+        <pre>&lt;button disabled&gt;Button&lt;/button&gt;</pre>
+
+        Icon left
+        <button><span class="material-icons left">search</span> Button</button>
+        <pre>
+&lt;button&gt;
+  &lt;span class="material-icons"&gt;search&lt;/span&gt; Button
+&lt;/button&gt;
+            </pre
+        >
+
+        Icon right
+        <button>
+          Button<span class="material-icons right">chevron_right</span>
+        </button>
+        <pre>
+&lt;button&gt;
+  Button &lt;span class="material-icons"&gt;chevron_right&lt;/span&gt;
+&lt;/button&gt;
+            </pre
+        >
+
+        Icon only
+        <button class="material-icons">filter_alt</button>
+        <pre>
+&lt;button class="material-icons"&gt;filter_alt&lt;/button&gt;</pre
+        >
+
+        Icon only, discrete
+        <button class="material-icons discrete">close</button>
+        <pre>
+&lt;button class="material-icons discrete"&gt;close&lt;/button&gt;</pre
+        >
+      </div>
+    </section>
+
+    <section>
+      <h2>Inputs</h2>
+      <div class="three-columns">
+        <div class="header">Type</div>
+        <div class="header">Example</div>
+        <div class="header">Source code</div>
+
+        Text
+        <input type="text" placeholder="Placeholder" />
+        <pre>
+&lt;input type=&quot;text&quot; placeholder=&quot;Placeholder&quot; /&gt;
+        </pre>
+
+        Icon left
+        <div class="input-wrapper">
+          <div class="material-icons">search</div>
+          <input type="text" placeholder="Placeholder" />
+        </div>
+        <pre>
+&lt;div class=&quot;input-wrapper&quot;&gt;
+  &lt;div class=&quot;material-icons&quot;&gt;search&lt;/div&gt;
+  &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder&quot; /&gt;
+&lt;/div&gt;
+        </pre>
+
+        Date
+        <input type="date" placeholder="11/21/1992" />
+        <pre>
+&lt;input type=&quot;date&quot; /&gt;
+        </pre>
+
+        Disabled
+        <input type="text" placeholder="Placeholder" disabled />
+        <pre>
+&lt;input type=&quot;text&quot; placeholder=&quot;Placeholder&quot; disabled /&gt;
+        </pre>
+
+        Checkbox
+        <label class="checkbox"
+          >Label
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <pre>
+&lt;label class=&quot;checkbox&quot;&gt;Label
+  &lt;input type=&quot;checkbox&quot; /&gt;
+  &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt;
+&lt;/label&gt;
+        </pre>
+
+        Radio
+        <label class="radio"
+          >Label
+          <input type="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <pre>
+&lt;label class=&quot;radio&quot;&gt;Label
+  &lt;input type=&quot;radio&quot; /&gt;
+  &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt;
+&lt;/label&gt;
+        </pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Icons</h2>
+      <p>
+        Open Components uses Material Icons. For a full list of avaiable icons
+        see:
+        <a href="https://fonts.google.com/icons"
+          >https://fonts.google.com/icons</a
+        >
+      </p>
+      <div class="three-columns">
+        <div class="header">Type</div>
+        <div class="header">Example</div>
+        <div class="header">Source code</div>
+
+        Icon
+        <span class="material-icons">insert_emoticon</span>
+        <pre>
+&lt;span class="material-icons"&gt;insert_emoticon&lt;/span&gt;</pre
+        >
+      </div>
+    </section>
+
+    <script src="src/main.ts"></script>
+  </body>
+</html>
