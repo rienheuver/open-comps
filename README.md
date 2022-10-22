@@ -1,6 +1,4 @@
-<div align="center">
 # Open Components
-</div>
 
 ## Implemented components
 
